@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JLFbrwnIk0Cy1T3gk6tZDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="14, 171, 191, 29" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='NetUICheckbox' name='My table has headers' /&gt;" Guid="90c8e546-581b-41e7-926a-a42145641de6" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9cc26e240d408db6552446097e003850.jpg" xmlns="">00ujQVNvGdECOyKdt4EN_Mw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

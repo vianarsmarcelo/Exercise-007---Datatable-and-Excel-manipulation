@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Table1",
+  "Type": "Element",
+  "Id": "86-IlEH5h0isoU5d536Vqw",
+  "Reference": "rfUFy3v8SUSTbRgdEod5oA/86-IlEH5h0isoU5d536Vqw",
+  "ParentRef": "rfUFy3v8SUSTbRgdEod5oA/F5J--Yf5SkaEwTxxAVfV0g",
+  "Created": "2026-10-15T21:16:10.4899948Z",
+  "Updated": "2026-10-15T21:16:10.4899948Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1pmBbyg2JUOw5bS46CxsDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="15, 132, 312, 33" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='What is the name of your table?' /&gt;" Guid="eb78027f-41fa-46f9-bb1c-fc1b0f9dfb56" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c14e41c571f23a4080b603511f2bf4cf.jpg" xmlns="">0DeK3YwaKyEKq9rK5ZvSByg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

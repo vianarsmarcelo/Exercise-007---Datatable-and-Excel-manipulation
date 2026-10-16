@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabc="clr-namespace:UiPath.Excel.Activities.Business.ChartModifications;assembly=UiPath.Excel.Activities" xmlns:ueawb="clr-namespace:UiPath.Excel.Activities.Windows.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Windows.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities.Business.ChartModifications</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.AsyncEnumerable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1108,5103" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="720,5080" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="Input\VegetablesProduction.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="718,4836" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New DataTable]" Name="dt_Vegetables" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="684,186" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Tracker&quot;)]" SaveTo="[dt_Vegetables]" />
+            <ui:AddDataColumn x:TypeArguments="x:Double" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Estimated Value" DataTable="[dt_Vegetables]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="684,239" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Vegetables]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="684,434" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,238" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,178" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Estimated Value")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[Convert.ToDouble(CurrentRow("Quantity") ) * Convert.ToDouble(CurrentRow("Price per Kg"))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ueab:FormatRangeX Alignment="{x:Null}" Font="{x:Null}" DisplayName="Format Estimated Value Column to Currency" sap:VirtualizedContainerService.HintSize="684,129" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.Sheet(&quot;Estimated Values&quot;).Range(&quot;G2:G1048576&quot;)]">
+              <ueab:FormatRangeX.Format>
+                <ueab:CurrencyFormat Currency="$" DecimalPlaces="0" SetAtTheEnd="False" UseThousandSeparator="True" />
+              </ueab:FormatRangeX.Format>
+            </ueab:FormatRangeX>
+            <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Estimated Values&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Estimated Values Sheet" sap:VirtualizedContainerService.HintSize="684,244" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt_Vegetables]" />
+            <Sequence DisplayName="Format Estimated Values Sheet as Table" sap:VirtualizedContainerService.HintSize="684,1678" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueawb:SelectRangeX DisplayName="Select Table Range" sap:VirtualizedContainerService.HintSize="616,129" sap2010:WorkflowViewState.IdRef="SelectRangeX_1" Range="[Excel.Sheet(&quot;Estimated Values&quot;).Range(&quot;A1:G37&quot;)]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Format as Table'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,202" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[Excel]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable ContentHash="Fv-hkKDLiEKWk4bHTuOMWw" DesignTimeRectangle="1151, 124, 80, 98" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Styles' /&gt;&lt;uia automationid='FormatAsTableGallery' cls='NetUIAnchor' name='Format as Table' /&gt;" Guid="551dd2dd-bbfc-4ddc-bc02-a096232b5162" InformativeScreenshot="5e702675550d7a84c11a3030f1bcedfa.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/ej1SR__aJUuBaLpRnYpQTA" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='VegetablesProduction.xlsx - Excel' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Choose Table Style" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,399" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InScope="[Excel]" InteractionMode="HardwareEvents" ScopeIdentifier="Excel" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][k(Right)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5">
+                <uix:NKeyboardShortcuts.Target>
+                  <uix:TargetAnchorable ContentHash="Id_0REvzjUuJHXNRlc3Rzg" DesignTimeRectangle="1153, 224, 483, 209" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Styles' /&gt;&lt;uia cls='NetUIGalleryCategoryContainer' name='Light' /&gt;" Guid="95a40d6d-5092-4138-ab6b-d71ec79fc2ae" InformativeScreenshot="04256118c9c02f792ff33e7c91e4014b.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/eK3EgM2-R06NRb-F_jlmWA" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='VegetablesProduction.xlsx - Excel' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NKeyboardShortcuts.Target>
+              </uix:NKeyboardShortcuts>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" DisplayName="Set Table range as '$A$G'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,260" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="[Excel]" InteractionMode="SameAsCard" ScopeIdentifier="Excel" Text="$A:$G" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable ContentHash="SKtxXK9hQEaiuq9tzNXR4g" DesignTimeRectangle="18, 71, 285, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Create Table' cls='NetUIHWND' /&gt;&lt;wnd aaname='Where is the data for your table?' cls='EDTBX' /&gt;" Guid="5986d53e-75cb-48c7-aad8-866e046b3da1" InformativeScreenshot="f0e9939922e6f1e8131347b7f31821a3.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/e5pY8WlzbEaeTLUZQgiIBQ" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NSetText DisplayName="Set Table name as 'Tbl_EstimatedValues'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,201" sap2010:WorkflowViewState.IdRef="NSetText_1" InScope="[Excel]" ScopeIdentifier="Excel" Text="Tbl_EstimatedValues" Version="V5">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable ContentHash="1pmBbyg2JUOw5bS46CxsDQ" DesignTimeRectangle="15, 132, 312, 33" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='What is the name of your table?' /&gt;" Guid="eb78027f-41fa-46f9-bb1c-fc1b0f9dfb56" InformativeScreenshot="c14e41c571f23a4080b603511f2bf4cf.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/86-IlEH5h0isoU5d536Vqw" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NCheck Action="Check" DisplayName="Check 'My table has headers'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,202" sap2010:WorkflowViewState.IdRef="NCheck_1" InScope="[Excel]" ScopeIdentifier="Excel" Version="V5">
+                <uix:NCheck.Target>
+                  <uix:TargetAnchorable ContentHash="JLFbrwnIk0Cy1T3gk6tZDQ" DesignTimeRectangle="14, 171, 191, 29" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='NetUICheckbox' name='My table has headers' /&gt;" Guid="90c8e546-581b-41e7-926a-a42145641de6" InformativeScreenshot="9cc26e240d408db6552446097e003850.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/ck2ljfRA_UyaMj1HBHrsYw" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NCheck.Target>
+              </uix:NCheck>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,193" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[Excel]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable ContentHash="95_5rV8QG0-o784kWevS4Q" DesignTimeRectangle="176, 205, 69, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" Guid="3d4a18bb-0ad6-48fc-beac-38d6d4fb4e0e" InformativeScreenshot="24c9be078616fe8aeb50dea774d059bf.jpg" Reference="rfUFy3v8SUSTbRgdEod5oA/l8PrxespGkCsxwqZw9l9NA" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='NUIDialog' title='Create Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Set Pivot Table" sap:VirtualizedContainerService.HintSize="684,1866" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:CreatePivotTableXv2 DestinationRange="[Excel.Sheet(&quot;Pivot Table&quot;)]" DisplayName="Create Pivot Table" sap:VirtualizedContainerService.HintSize="650,992" sap2010:WorkflowViewState.IdRef="CreatePivotTableXv2_2" LayoutRowType="Compact" Range="[Excel.Sheet(&quot;Estimated Values&quot;)]" TableName="Pivot Table" ValuesMode="Columns">
+                <ueab:CreatePivotTableXv2.Body>
+                  <ActivityAction>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,701" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:PivotTableFieldX DisplayName="Pivot Field - Vegetables - Row" FieldName="Vegetables" Function="Sum" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_6" Type="Row" />
+                      <ueab:PivotTableFieldX DisplayName="Pivot Field - Storage Zone - Filter" FieldName="Storage Zone" Function="Sum" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_7" Type="Filter" />
+                      <ueab:PivotTableFieldX DisplayName="Pivot Field - Vendor Name - Column" FieldName="Vendor Name" Function="Sum" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_8" Type="Column" />
+                      <ueab:PivotTableFieldX DisplayName="Pivot Field - Quantity - Value - Sum" FieldName="Quantity" Function="Sum" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_9" Type="Value" />
+                      <ueab:PivotTableFieldX DisplayName="Pivot Field - Estimated Value - Sum" FieldName="Estimated Value" Function="Sum" sap:VirtualizedContainerService.HintSize="416,121" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_10" Type="Value" />
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:CreatePivotTableXv2.Body>
+              </ueab:CreatePivotTableXv2>
+              <Sequence DisplayName="Create Chart" sap:VirtualizedContainerService.HintSize="650,791" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="ue:IChartRef" Name="PivotTableChart" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:InsertExcelChartX ChartCategory="Column" ChartHeight="211" ChartType="xlColumnClustered" ChartWidth="550" DisplayName="Insert Chart" sap:VirtualizedContainerService.HintSize="616,246" sap2010:WorkflowViewState.IdRef="InsertExcelChartX_1" InsertIntoSheet="[Excel.Sheet(&quot;Pivot Table&quot;)]" InsertedChart="[PivotTableChart]" Left="60" Range="[Excel.Sheet(&quot;Pivot Table&quot;)]" Top="20" />
+                <ueab:UpdateChartX Chart="[PivotTableChart]" DisplayName="Update Chart" sap:VirtualizedContainerService.HintSize="616,462" sap2010:WorkflowViewState.IdRef="UpdateChartX_1">
+                  <ueab:UpdateChartX.Body>
+                    <ActivityAction>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,237" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueabc:ModifyChartTitleModification DisplayName="Modify Chart Title" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="ModifyChartTitleModification_1" Title="Estimated Values" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:UpdateChartX.Body>
+                </ueab:UpdateChartX>
+              </Sequence>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+    </ueab:ExcelApplicationCard>
+  </Sequence>
+</Activity>

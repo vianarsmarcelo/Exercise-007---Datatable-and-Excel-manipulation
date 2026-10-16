@@ -1,0 +1,6 @@
+{
+  "Name": "Exercise 007_DataTable",
+  "ProjectType": "Process",
+  "Description": "Exercise from the UiPath Automation Explorer learning plan to practice DataTable",
+  "MainFile": "Main.xaml"
+}

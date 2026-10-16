@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fv-hkKDLiEKWk4bHTuOMWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1151, 124, 80, 98" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Styles' /&gt;&lt;uia automationid='FormatAsTableGallery' cls='NetUIAnchor' name='Format as Table' /&gt;" Guid="551dd2dd-bbfc-4ddc-bc02-a096232b5162" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='VegetablesProduction.xlsx - Excel' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5e702675550d7a84c11a3030f1bcedfa.jpg" xmlns="">031t_sewQfkSToNSTFIatUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
